@@ -1,0 +1,6 @@
+{
+  "name": "Mote — Spatial Publishing & Procedural DSP Canvas",
+  "description": "Zero-chrome desktop publishing, Z-axis spatial layout, local-first markdown, and procedural DSP meditation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

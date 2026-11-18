@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+::selection {
+  background-color: rgba(226, 184, 135, 0.45);
+  color: inherit;
+}
+
+/* Dark mode selection override */
+.dark ::selection, [data-theme="night"] ::selection {
+  background-color: rgba(80, 110, 160, 0.5);
+  color: inherit;
+}
+
+/* Editorial typography smoothness */
+body, [contenteditable="true"], textarea, p {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom highlight for gesture-selected text ranges */
+.mote-selected-word {
+  background-color: rgba(226, 184, 135, 0.45);
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(226, 184, 135, 0.6);
+}
+
+.mote-selected-sentence {
+  background-color: rgba(226, 184, 135, 0.35);
+  border-radius: 2px;
+}
+
+.mote-selected-paragraph {
+  background-color: rgba(226, 184, 135, 0.25);
+  border-radius: 4px;
+}
